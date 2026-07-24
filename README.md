@@ -1,5 +1,13 @@
 # PenEcho Runtime
 
+<!-- ZMS-ESTATE:BEGIN -->
+
+> **Estate status:** `maintenance` · **Purpose:** `mirror_or_packaging` · **Portfolio role:** `none`
+> **Canonical for:** penecho-runtime-packaging
+> Lifecycle authority: `ZMS-Labs/zms-homelab/governance/estate.yaml`.
+
+<!-- ZMS-ESTATE:END -->
+
 ZMS Labs' reproducible container packaging for [PenEcho](https://github.com/erickong/penecho). This repository does not fork PenEcho's application code. It installs the exact reviewed npm release and supplies the image build, provenance, and cluster runtime boundary needed by the ZMS homelab.
 
 ## Provenance
