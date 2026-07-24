@@ -18,6 +18,8 @@ ZMS Labs' reproducible container packaging for [PenEcho](https://github.com/eric
 
 The complete license is in [LICENSE](LICENSE), and upstream attribution and source locations are recorded in [NOTICE](NOTICE). `package-lock.json` pins the npm artifact and integrity hash. Container images are published to `ghcr.io/zms-labs/penecho-runtime` with immutable content digests, SBOM/provenance metadata, and a human-friendly commit tag.
 
+The exact wrapper boundary, update policy, and divergence behavior are recorded in [UPSTREAM.md](UPSTREAM.md).
+
 ## Local verification
 
 ```sh
