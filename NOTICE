@@ -6,5 +6,5 @@ This distribution packages PenEcho 0.4.2 by the PenEcho authors and contributors
 PenEcho and this runtime wrapper are distributed under the GNU Affero General
 Public License, version 3 only. The complete license text is in LICENSE. The
 corresponding wrapper source is available at
-https://github.com/ZMS-Labs/penecho-runtime, and the packaged upstream source
+https://github.com/ZMS-Labs/zms-canvas-runtime, and the packaged upstream source
 is available at https://github.com/penecho/penecho.

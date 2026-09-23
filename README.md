@@ -6,6 +6,8 @@ This repository is archived and read-only. It packaged [PenEcho](https://github.
 
 The history here is kept for reference. Archiving can be undone by an organization owner. No history was deleted.
 
+On 2026-09-23 the repository was renamed from `penecho-runtime` to `zms-canvas-runtime`, and links to the old name redirect. Container images built before the rename were pushed to `ghcr.io/zms-labs/penecho-runtime`.
+
 I'm [Zach Stern](https://github.com/SternOne). AI tools write the code. I decide what each project is for and check what comes back.
 
 ## What the packaging did

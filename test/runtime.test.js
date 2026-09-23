@@ -23,6 +23,21 @@ test("distribution includes AGPL text and upstream attribution", () => {
   assert.doesNotMatch(notice, /erickong/);
 });
 
+test("wrapper names follow the renamed repository", () => {
+  const pkg = JSON.parse(fs.readFileSync(path.join(root, "package.json"), "utf8"));
+  const lock = JSON.parse(fs.readFileSync(path.join(root, "package-lock.json"), "utf8"));
+  const dockerfile = fs.readFileSync(path.join(root, "Dockerfile"), "utf8");
+  const notice = fs.readFileSync(path.join(root, "NOTICE"), "utf8");
+  const workflow = fs.readFileSync(path.join(root, ".github", "workflows", "container.yml"), "utf8");
+  assert.equal(pkg.name, "@zms-labs/zms-canvas-runtime");
+  assert.equal(lock.name, pkg.name);
+  assert.equal(lock.packages[""].name, pkg.name);
+  assert.match(dockerfile, /org\.opencontainers\.image\.source="https:\/\/github\.com\/ZMS-Labs\/zms-canvas-runtime"/);
+  assert.match(notice, /https:\/\/github\.com\/ZMS-Labs\/zms-canvas-runtime,/);
+  assert.match(workflow, /^\s*IMAGE: ghcr\.io\/zms-labs\/zms-canvas-runtime\s*$/m);
+  for (const text of [dockerfile, notice, workflow]) assert.doesNotMatch(text, /penecho-runtime/);
+});
+
 test("container base image is digest pinned", () => {
   const dockerfile = fs.readFileSync(path.join(root, "Dockerfile"), "utf8");
   const fromLines = dockerfile.split(/\r?\n/).filter((line) => line.startsWith("FROM "));

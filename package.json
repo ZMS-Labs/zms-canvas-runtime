@@ -1,5 +1,5 @@
 {
-  "name": "@zms-labs/penecho-runtime",
+  "name": "@zms-labs/zms-canvas-runtime",
   "version": "0.1.0",
   "private": true,
   "description": "Archived container packaging for PenEcho 0.4.2.",
