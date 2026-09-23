@@ -7,7 +7,7 @@ const test = require("node:test");
 
 const root = path.resolve(__dirname, "..");
 
-test("runtime pins the reviewed PenEcho release", () => {
+test("runtime pins the PenEcho release", () => {
   const installed = require("penecho/package.json");
   assert.equal(installed.version, "0.4.2");
   assert.equal(installed.license, "AGPL-3.0-only");
