@@ -1,11 +1,10 @@
-PenEcho Runtime
+ZMS packaging of PenEcho (archived)
 Copyright 2026 ZMS Labs contributors
 
-This distribution packages PenEcho 0.4.2, originally developed by Eric Kong
-and contributors at https://github.com/erickong/penecho.
+This distribution packages PenEcho 0.4.2 by the PenEcho authors and contributors, https://github.com/penecho/penecho.
 
 PenEcho and this runtime wrapper are distributed under the GNU Affero General
 Public License, version 3 only. The complete license text is in LICENSE. The
 corresponding wrapper source is available at
-https://github.com/ZMS-Labs/penecho-runtime, and the packaged upstream source
-is available at https://github.com/erickong/penecho.
+https://github.com/ZMS-Labs/zms-canvas-runtime, and the packaged upstream source
+is available at https://github.com/penecho/penecho.

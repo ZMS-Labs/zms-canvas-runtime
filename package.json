@@ -1,8 +1,8 @@
 {
-  "name": "@zms-labs/penecho-runtime",
+  "name": "@zms-labs/zms-canvas-runtime",
   "version": "0.1.0",
   "private": true,
-  "description": "Reproducible ZMS Labs container runtime for PenEcho",
+  "description": "Archived container packaging for PenEcho 0.4.2.",
   "license": "AGPL-3.0-only",
   "engines": {
     "node": ">=22"
