@@ -18,8 +18,9 @@ test("distribution includes AGPL text and upstream attribution", () => {
   const notice = fs.readFileSync(path.join(root, "NOTICE"), "utf8");
   assert.match(license, /GNU AFFERO GENERAL PUBLIC LICENSE/);
   assert.match(license, /Version 3, 19 November 2007/);
-  assert.match(notice, /github\.com\/erickong\/penecho/);
+  assert.match(notice, /PenEcho 0\.4\.2 by the PenEcho authors and contributors, https:\/\/github\.com\/penecho\/penecho\./);
   assert.match(notice, /penecho@0\.4\.2|PenEcho 0\.4\.2/);
+  assert.doesNotMatch(notice, /erickong/);
 });
 
 test("container base image is digest pinned", () => {

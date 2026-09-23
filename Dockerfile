@@ -14,7 +14,7 @@ WORKDIR /app
 COPY --from=dependencies /app/node_modules ./node_modules
 COPY package.json LICENSE NOTICE ./
 
-LABEL org.opencontainers.image.title="PenEcho Runtime" \
+LABEL org.opencontainers.image.title="ZMS packaging of PenEcho (archived)" \
       org.opencontainers.image.source="https://github.com/ZMS-Labs/penecho-runtime" \
       org.opencontainers.image.licenses="AGPL-3.0-only"
 

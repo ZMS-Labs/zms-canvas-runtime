@@ -1,4 +1,4 @@
-# PenEcho Runtime
+# ZMS packaging of PenEcho (archived)
 
 ## Archived 2026-07-30
 
